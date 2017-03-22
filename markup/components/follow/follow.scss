@@ -1,0 +1,101 @@
+.follow {
+	position: relative;
+
+	margin-bottom: 20px;
+	padding: 2px;
+
+	border: 1px solid $white;
+	&__title {
+		top: -17px;
+
+		padding-right: 25px;
+		padding-left: 25px;
+
+		color: $white;
+		background-color: $purple;
+
+		font-size: 28px;
+
+		@include absoluteHorizontalCenter;
+		@media screen and(max-width: 960px) {
+			text-align: center;
+		}
+		@media screen and(max-width: 760px) {
+			top: -14px;
+
+			padding-right: 10px;
+			padding-left: 10px;
+
+			text-align: initial;
+
+			font-size: 23px;
+		}
+		@media screen and(max-width: 480px) {
+			padding-right: 15px;
+			padding-left: 15px;
+
+			text-align: center;
+
+			font-size: 23px;
+		}
+	}
+	&__inner {
+		padding: 30px 23px 21px;
+
+		border: 1px solid $white;
+		@media screen and(max-width: 1050px) {
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+		@media screen and(max-width: 480px) {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+}
+
+.follow-gallery {
+	display: flex;
+
+	justify-content: space-between;
+	@media screen and(max-width: 960px) {
+		margin-top: 30px;
+	}
+	@media screen and(max-width: 760px) {
+		margin-top: 0;
+	}
+	@media screen and(max-width: 480px) {
+		width: 69%;
+		margin-top: 50px;
+		margin-right: auto;
+		margin-left: auto;
+
+		flex-wrap: wrap;
+	}
+	&__item {
+		@include transition;
+		@media screen and(max-width: 960px) {
+			margin-right: 5px;
+		}
+		@media screen and(max-width: 480px) {
+			width: 48%;
+			margin-right: 0;
+			margin-bottom: 5px;
+		}
+		&:hover {
+			filter: brightness(60%);
+		}
+		&._last {
+			@media screen and(max-width: 960px) {
+				margin-right: 0;
+			}
+		}
+	}
+	&__image {
+		display: block;
+		@media screen and(max-width: 960px) {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}

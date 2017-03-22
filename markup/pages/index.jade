@@ -1,0 +1,13 @@
+doctype html
+html(class="no-js", lang="ru")
+
+	include ../components/head/head
+	include ../components/development/development
+	include ../components/follow/follow
+	head
+		+head(head.defaults)
+	body
+		main.main
+			+development
+			
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

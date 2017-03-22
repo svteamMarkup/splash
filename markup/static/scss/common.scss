@@ -1,0 +1,35 @@
+body {
+    height: 100%;
+    padding-top: 187px;
+    padding-bottom: 347px;
+
+    color: $black;
+    background: $bodyBg url(%=static=%general/main-bg.jpg) no-repeat;
+    background-size: cover;
+
+    font-family: "Lato-Regular";
+    font-size: $baseFontSize;
+    @media screen and(max-width: 1050px) {
+        padding-top: 60px;
+        padding-bottom: 90px;
+    }
+    @media screen and(max-width: 480px) {
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+}
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+ol li,
+ul li {
+    @include nl;
+}
+.main {
+    width: 100%;
+    max-width: 1020px;
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -21,9 +21,7 @@ module.exports = {
         "webpack": {
             "useHMR": false
         },
-        "jsPathsToConcatBeforeModulesJs": [
-            "node_modules/jquery/dist/jquery.min.js"
-        ],
+        "jsPathsToConcatBeforeModulesJs": [],
         "lintJsCodeBeforeModules": false,
         "jsPathsToConcatAfterModulesJs": [],
         "lintJsCodeAfterModules": false
